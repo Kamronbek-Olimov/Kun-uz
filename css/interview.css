@@ -1,0 +1,66 @@
+.interview{
+    padding: 30px 0px;
+}
+.interview>.container:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.interview>.container:nth-child(1)>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.interview>.container:nth-child(1)>div>button{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #B3BAC5;
+    border: 1px solid #B3BAC5;
+    background-color: transparent;
+    font-size: 16px;
+}
+.interview>.container:nth-child(1) a{
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+.interview-bg{
+    background-color: #232323;
+    padding: 30px 0px;
+    margin-top: 20px;
+}
+.interview-bg>.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+.interview-bg>.container>div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    cursor: pointer;
+}
+.interview-bg>.container>div:hover h3{
+    color: #233280;
+}
+.interview-bg>.container>div>img{
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.interview-bg>.container>div>h3{
+    font-size: 22px;
+    line-height: 120%;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.interview-bg>.container>div>b{
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #9f9f9f;
+}

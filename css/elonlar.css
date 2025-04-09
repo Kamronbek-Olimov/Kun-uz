@@ -1,0 +1,55 @@
+.elonlar{
+    padding: 30px 0px;
+}
+.elonlar>.container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.elonlar>.container>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elonlar>.container>div:nth-child(1)>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.elonlar>.container>div:nth-child(1)>div:nth-child(1) h4{
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 120%;
+}
+.elonlar>.container>div:nth-child(1)>div:nth-child(2)>button{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #B3BAC5;
+    border: 1px solid #B3BAC5;
+    background-color: transparent;
+    font-size: 16px;
+}
+.elonlar>.container>div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+.elonlar>.container>div:nth-child(2)>div{
+    background-color: #26304D;
+}
+.elonlar>.container>div:nth-child(2)>div:hover{
+    background-color: #1c3d9f;
+    cursor: pointer;
+}
+.elonlar>.container>div:nth-child(2)>div>img{
+    width: 100%;
+}
+.elonlar>.container>div:nth-child(2)>div>h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 20px 20px 40px 20px;
+}
