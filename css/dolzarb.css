@@ -1,0 +1,105 @@
+.dolzarb-message{
+    padding: 30px 0px;
+}
+.dolzarb-message .container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.dolzarb-message>.container>a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+}
+.main-dolzarb{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.main-dolzarb a{
+    text-decoration: none;
+    color: #000000;
+}
+.main-dolzarb:hover a{
+    color: #0042c5;
+}
+.main-dolzarb>div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.main-dolzarb>div>b{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #9f9f9f;
+}
+.main-dolzarb>div>h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #000000;
+}
+.main-dolzarb>div>p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+}
+.dolzarb-message>.container>div{
+    display: flex;
+    gap: 36px;
+}
+.small-dolzarb{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-decoration: none;
+}
+.small-dolzarb img{
+    width: 300px;
+}
+.small-dolzarb div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    cursor: pointer;
+}
+.small-dolzarb div:hover p{
+    color: #0042c5;
+}
+.small-dolzarb div span{
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #9f9f9f;
+}
+.small-dolzarb div p{
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 700;
+    column-rule-color: #000000;
+}
+.small-dolzarb>a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+}
+.small-dolzarb>a>button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0C2F75;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}

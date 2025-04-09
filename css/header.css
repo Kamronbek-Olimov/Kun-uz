@@ -6,6 +6,7 @@ nav {
     left: 0;
     left: 0;
     background-color: #FFFFFF;
+    z-index: 100;
 }
 
 nav>.container {
@@ -27,7 +28,6 @@ nav>.container>ul>li {
 }
 
 nav>.container>ul>li>a {
-    font-family: "Inter", "sans-serif";
     font-size: 15px;
     font-weight: 700;
     color: #000000;
@@ -97,27 +97,28 @@ nav .nav-btns .menu-btn img {
 .dolzarb{
     padding-top: 75px;
 }
-.dolzarb>.container{
+.dolzarb .container{
     padding-bottom: 10px;
     border-bottom: 1px solid #BABABA;
 }
-.dolzarb>.container>ul{
+.dolzarb ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.dolzarb>.container>ul>li>a{
+.dolzarb ul>li>a{
     text-decoration: none;
     color: #000000;
     font-size: 15px;
     font-family: "Inter", "sans-serif";
     font-weight: 500;
 }
-.dolzarb>.container>ul>li>a:hover{
+.dolzarb ul>li>a:hover{
     color: #0042c5;
 }
 .hero{
-    padding: 25px 0px;
+    min-height: 100vh;
+    padding: 30px 0px;
 }
 .hero .container{
     display: grid;
@@ -129,48 +130,81 @@ nav .nav-btns .menu-btn img {
     flex-direction: column;
     row-gap: 15px;
 }
-.hero .main-content>div:nth-child(1){
+.main-news{
     display: flex;
+    cursor: pointer;
 }
-.hero .main-content>div:nth-child(1) div{
+.main-news:hover h1{
+    color: #0042c5;
+}
+.main-news>div{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     padding: 25px 25px 25px 0px;
 }
-.hero .main-content>div:nth-child(1) img{
+.main-news>div h1{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 120%;
+    line-height: 24px;
+}
+.main-news>div p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.main-news img{
     width: 550px;
 }
 
-.main-content>div:nth-child(2){
+.last-news{
     display: grid;
-    grid-template-columns: 700px 1fr;
+    grid-template-columns: 675px 1fr;
     gap: 36px;
 }
-.main-content>div:nth-child(2)>div:nth-child(1){
+.last-news>div:nth-child(1){
     display: flex;
     flex-direction: column;
 }
-.main-content>div:nth-child(2)>div:nth-child(1)>div{
+.last-news>div:nth-child(1)>div{
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #DFDFDF;
     padding: 20px 0px;
     gap: 50px;
+    cursor: pointer;
 }
-.main-content>div:nth-child(2)>div:nth-child(1)>div>div{
+.last-news>div:nth-child(1)>div>div{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
-.main-content>div:nth-child(2)>div:nth-child(1)>div>img{
+.last-news>div:nth-child(1)>div:hover h4{
+    color: #0042c5;
+}
+.last-news>div:nth-child(1)>div>div b{
+    font-size: 12px;
+    font-weight: 600;
+    color: #9f9f9f;
+}
+.last-news>div:nth-child(1)>div>div h4{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29px;
+}
+.last-news>div:nth-child(1)>div>img{
     width: 200px;
 }
 .muharrir-tanlovi{
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+}
+.muharrir-tanlovi>h3{
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 800;
 }
 .muharrir-tanlovi>div{
     display: flex;
@@ -183,14 +217,59 @@ nav .nav-btns .menu-btn img {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    cursor: pointer;
+}
+.muharrir-tanlovi>div>div:hover{
+    transform: translate(-10px, -10px);
+    transition: all .2s ease;
+}
+.muharrir-tanlovi>div>div span{
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #9f9f9f;
+}
+.muharrir-tanlovi>div>div h5{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 600;
+}
+.muharrir-tanlovi>div>div p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
 }
 .aside{
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
+    row-gap: 10px;
 }
-.aside h3{
+.aside a{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.aside a>button{
+    background-color: #0C2F75;
+    color: #FFFFFF;
+    border: none;
     font-size: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 400;
+}
+.aside>a{
+    text-decoration: none;
+    color: #000000;
 }
 .aside>div{
     display: flex;
@@ -202,6 +281,22 @@ nav .nav-btns .menu-btn img {
     flex-direction: column;
     row-gap: 10px;
     border-bottom: 1px solid #E1E1E1;
+}
+.aside>div>div:hover p{
+    color: #0042c5;
+}
+.aside>div>div p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    cursor: pointer;
+}
+.aside>div>div span{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #9f9f9f;
+    cursor: pointer;
 }
 @media (max-width: 1024px) {
     nav {
