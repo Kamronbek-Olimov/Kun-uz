@@ -1,0 +1,64 @@
+.hero{
+    padding-top: 80px;
+}
+.video-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video-page>h2{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    background-color: #0c2f75;
+    color: #FFFFFF;
+    padding: 14px 50px;
+}
+.video-page>div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid #9F9F9F;
+    row-gap: 20px;
+}
+.video-page>div>div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #9F9F9F;
+    cursor: pointer;
+}
+.video-page>div>div:hover h4{
+    color: #0c2f75;
+}
+.video-page>div>a{
+    padding: 15px 50px;
+    background-color: #9F9F9F;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #000000;
+}
+.video-page>div>div>img{
+    width: 100%;
+}
+.video-page>div>div>div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.video-page>div>div>div>b{
+    color: #9f9f9f;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.video-page>div>div>div>h4{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 29px;
+}
