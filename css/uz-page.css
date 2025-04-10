@@ -1,0 +1,41 @@
+.main-content{
+    display: flex;
+    align-items: center;
+}
+.main-content>a{
+    padding: 15px 50px;
+    border-radius: 50px;
+    background-color: #d7d6d6;
+    text-decoration: none;
+    font-size: 19px;
+    color: #000000;
+}
+.uz-part{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+}
+.uz-part>div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    cursor: pointer;
+}
+.uz-part>div:hover h4{
+    color: #0042c5;
+}
+.uz-part>div>img{
+    width: 100%;
+    border-radius: 10px;
+}
+.uz-part>div>b{
+    color: #9f9f9f;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.uz-part>div>h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+}
