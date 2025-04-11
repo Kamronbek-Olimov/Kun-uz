@@ -1,0 +1,117 @@
+.hero{
+    padding-top: 80px;
+}
+.hero>.container{
+    align-items: start;
+}
+.toshkent-page{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.toshkent-page>h2{
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 120%;
+}
+.toshkent-page>div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.toshkent-page>div>div{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #9F9F9F;
+    cursor: pointer;
+}
+.toshkent-page>div>div:hover h4{
+    color: #0c2f75;
+}
+.toshkent-page>div>a{
+    padding: 15px 50px;
+    background-color: #9F9F9F;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #000000;
+}
+.toshkent-page>div>div>img{
+    width: 200px;
+}
+.toshkent-page>div>div>div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.toshkent-page>div>div>div>b{
+    color: #9f9f9f;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.toshkent-page>div>div>div>h4{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 29px;
+}
+.tosh-aside{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: #DEE1DF;
+}
+.tosh-aside>img{
+    width: 100%;
+}
+.tosh-aside>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 0px 25px;
+}
+.tosh-aside>div:nth-child(2)>h4{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.tosh-aside>div:nth-child(2)>p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.tosh-aside>div:nth-child(2)>p>span{
+    font-weight: 700;
+}
+.tosh-aside>div:nth-child(3){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+}
+.tosh-aside>div:nth-child(3)>img{
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.tosh-aside>div:nth-child(3)>div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+.tosh-aside>div:nth-child(3)>div>h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.tosh-aside>div:nth-child(3)>div>p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+}
