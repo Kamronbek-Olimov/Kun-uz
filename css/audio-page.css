@@ -41,6 +41,23 @@
     object-fit: cover;
     border-radius: 6px;
 }
+.audio-part>div>div:nth-child(1)>div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.audio-part>div>div:nth-child(1)>div>button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #C3CFDA;
+    cursor: pointer;
+    padding: 10px;
+}
+.audio-part>div>div:nth-child(1)>div>button>img{
+    width: 100%;
+}
 .audio-part>div>div:nth-child(2){
     display: flex;
     align-items: center;

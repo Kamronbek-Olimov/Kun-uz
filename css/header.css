@@ -61,12 +61,35 @@ nav .nav-btns button {
     line-height: 120%;
 }
 
-nav .nav-btns .select-btn {
+.select-bar {
+    position: relative;
+}
+.select-bar .select-btn{
     padding: 8px 12px;
     display: flex;
     align-items: center;
     gap: 7px;
     background-color: #f8f8f8;
+}
+.langs{
+    position: absolute;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px .7px #BABABA;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all .2s ease;
+}
+.langs.active{
+    transform: scaleY(1);
+}
+.langs>span{
+    width: 100%;
+    padding: 8px 24px;
+    cursor: pointer;
 }
 .search-bar{
     width: 36px;
