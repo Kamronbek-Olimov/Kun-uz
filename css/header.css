@@ -68,16 +68,46 @@ nav .nav-btns .select-btn {
     gap: 7px;
     background-color: #f8f8f8;
 }
-
-nav .nav-btns .search-bar {
+.search-bar{
+    width: 36px;
+    height: 36px;
+    position: relative;
+}
+.search-btn{
     width: 36px;
     height: 36px;
     padding: 10px;
+    background-color: #f8f8f8;
+}
+.search-input{
+    position: absolute;
+    width: 220px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 8px;
+    gap: 10px;
+    left: -180px;
+    top: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    z-index: 100;
+    transform: scaleX(0);
+    transition: all .2s ease;
 }
-
+.search-input.active{
+    transform: scaleX(1);
+}
+.search-input>input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.search-input>button{
+    background-color: transparent;
+    border: none;
+}
 nav .nav-btns .search-bar img {
     width: 100%;
 }
