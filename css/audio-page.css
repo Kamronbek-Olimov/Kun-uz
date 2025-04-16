@@ -1,6 +1,117 @@
 .hero{
     padding-top: 80px;
 }
+.one-audio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+    background-color: #FFFFFF;   
+    width: 90%; 
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.one-audio>div{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.one-audio>div:nth-child(1)>img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.one-audio>div:nth-child(1)>h3{
+    font-size: 15px;
+    line-height: 135%;
+    font-weight: 600;
+}
+.one-audio>div:nth-child(2)>button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.one-audio>div:nth-child(2)>button>img{
+    width: 20px;
+    height: 20px;
+}
+.one-audio>div:nth-child(2)>button:nth-child(2){
+    background-color: #E9EBEE;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.one-audio>div:nth-child(2)>button:nth-child(2)>img{
+    width: 30px;
+    height: 30px;
+}
+.one-audio>div:nth-child(3){
+    position: relative;
+    width: 400px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #DCE1E8;
+    cursor: pointer;
+}
+.one-audio>div:nth-child(3)>span{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.one-audio>div:nth-child(4){
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 400;
+    color: #585858;
+}
+.one-audio>div:nth-child(5)>hr{
+    width: 1px;
+    height: 20px;
+    border: none;
+    background-color: #D8D8D8;
+}
+.one-audio>div:nth-child(5)>button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.one-audio>div:nth-child(5)>button>img{
+    width: 20px;
+    height: 20px;
+}
+.one-audio>div:nth-child(5)>div{
+    width: 90px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #BBC1CA;
+    position: relative;
+    cursor: pointer;
+}
+.one-audio>div:nth-child(5)>div>span{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #000000;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
 .audio-part{
     display: flex;
     flex-direction: column;
